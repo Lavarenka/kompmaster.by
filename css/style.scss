@@ -1,5 +1,7 @@
 @import "nullstyle.scss";
 
+$border:1px solid black;
+
 body{
     font-family: Roboto;
     font-size: 16px;
@@ -129,6 +131,7 @@ body{
     position: relative;
     z-index: 2;
     overflow: hidden;
+    
     // .main-block__video
 
     // &__video {
@@ -218,8 +221,9 @@ body{
     // .competitor__body
 
     &__body {
+        padding: 180px 0;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-between; 
     }
 
     // .competitor__column
@@ -228,22 +232,37 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
+        flex: 0 0 35%;
+        border: 1px solid black;
+        
         
     }
 
     // .competitor__title
 
     &__title {
+        font-size: 38px;
+        font-weight: 600;
+        line-height: 1.23;
+        margin: 0 0 24px 0;
+
     }
 
     // .competitor__items
 
     &__items {
+        font-style: 18px;
+        line-height: 1.55;
+        
     }
 
     // .competitor__item
 
     &__item {
+        margin-left: 15px;
+    }
+    &__item:not(:last-child){
+        margin-bottom: 24px;
     }
 
     // .competitor__images
@@ -251,8 +270,9 @@ body{
     &__images {
     // width: 500px;
     // height: 500px;
-      
+    
     display: flex;
+    border: $border ;
     
         
     }

@@ -208,6 +208,7 @@ body {
 
 /*---------competitor-----------------------*/
 .competitor__body {
+  padding: 180px 0;
   display: flex;
   justify-content: space-between;
 }
@@ -215,9 +216,28 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex: 0 0 35%;
+  border: 1px solid black;
+}
+.competitor__title {
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 1.23;
+  margin: 0 0 24px 0;
+}
+.competitor__items {
+  font-style: 18px;
+  line-height: 1.55;
+}
+.competitor__item {
+  margin-left: 15px;
+}
+.competitor__item:not(:last-child) {
+  margin-bottom: 24px;
 }
 .competitor__images {
   display: flex;
+  border: 1px solid black;
 }
 .competitor__image {
   max-width: 180px;
