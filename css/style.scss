@@ -35,14 +35,12 @@ body{
     object-fit: cover;
 } 
 
-.button{
+._button{
     display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
-        min-height: 60px;
-        font-weight: 700;
-        padding: 5px 60px;
+
         transition: all 0.3s ease 0s;
         
         color: rgb(255, 255, 255);
@@ -195,6 +193,9 @@ body{
     }
     &__services {
     }
+    &__request {
+        background-image: url(/img/pkfon.jpg) center center no-repeat fixed;
+    }
 }
 /*-----main--------------------------------*/
 
@@ -284,7 +285,9 @@ body{
     // .main-block__button
 
     &__button {
-      
+        min-height: 60px;
+        font-weight: 700;
+        padding: 5px 60px;
 
     }
 }
@@ -398,6 +401,12 @@ body{
     padding: 150px 0 180px 0;
     background-color: #f5f5f5;
     // .services__container
+    @media (max-width:940px) {
+        padding: 100px 0;   
+    }
+    @media (max-width:660px) {
+        padding: 50px 0;   
+    }
     &__header{
         margin: 0 20px ;
     }
@@ -420,8 +429,10 @@ body{
         @media (max-width:940px) {
             flex: 0 1 50%;
         }
+
         @media (max-width:600px) {
             flex: 0 1 100%;
+            margin-top: 70px;
         }
         
     }
@@ -476,6 +487,38 @@ body{
 
     &__text {
         font-weight: 300;
+    }
+}
+
+/*-----request--------------------------*/
+
+.request {
+    background: url(/img/pkfon.jpg) center center no-repeat fixed;
+    
+    // .request__container
+
+    &__container {
+    }
+
+    // .request__body
+
+    &__body {
+        padding: 165px 0 180px 0;
+    }
+
+    // .request__title
+
+    &__title {
+    }
+
+    // .request__text
+
+    &__text {
+    }
+
+    // .request__button
+
+    &__button {
     }
 }
 
