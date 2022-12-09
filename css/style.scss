@@ -46,7 +46,7 @@ body{
         color: rgb(255, 255, 255);
         background-color: rgb(245, 145, 79);
         border-radius: 5px;
-        text-transform: uppercase;
+        
         box-shadow: rgb(0 0 0 / 30%) 0px 0px 20px 0px;
 }
 /*-----header-block--------------------*/
@@ -194,7 +194,9 @@ body{
     &__services {
     }
     &__request {
-        background-image: url(/img/pkfon.jpg) center center no-repeat fixed;
+       
+    }
+    &__advantages {
     }
 }
 /*-----main--------------------------------*/
@@ -493,32 +495,154 @@ body{
 /*-----request--------------------------*/
 
 .request {
-    background: url(/img/pkfon.jpg) center center no-repeat fixed;
-    
+    // фон + его затемнение
+    background:linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9) ), url(/img/pkfon.jpg) center center no-repeat fixed ;
+    background-size: cover;
+
     // .request__container
 
     &__container {
+        display: flex; 
+        justify-content: center;
     }
 
     // .request__body
 
     &__body {
         padding: 165px 0 180px 0;
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex: 0 1 960px;
+        @media (max-width:940px) {
+            padding: 100px 0;   
+        }
+        @media (max-width:660px) {
+            padding: 50px 0;   
+        } 
     }
 
     // .request__title
 
     &__title {
+        font-size: 48px;
+        line-height: 1.23;
+        font-weight: 600;
+        margin-bottom: 25px;
+        @media (max-width:660px) {
+            font-size: 38px;
+        }
+        @media (max-width:440px) {
+            font-size: 30px;
+        }
     }
 
     // .request__text
 
     &__text {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 1.5;
+        max-width: 600px;
+        padding: 0 5px;
+        @media (max-width:660px) {
+            font-size: 20px;
+        }
+        @media (max-width:440px) {
+            font-size: 16px;
+        }
+        
     }
 
     // .request__button
-
+    &__column{
+        position: relative;
+        margin-top: 70px;
+    }
+    &__arrow-icon{
+        width: 45px;
+        position: absolute;
+        left: -30px;
+        transform: translateX(-100%);
+        fill: #fff;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        @media (max-width:500px) {
+            display: none;
+        }
+    }
+    
     &__button {
+        
+        padding: 0 60px;
+        min-height: 60px;
+        font-weight: 700;
+        font-size: 16px;
+    }
+}
+
+/*-------advantages--------------------------*/
+
+
+.advantages {
+    display: flex;
+    // .advantages__container
+    padding: 165px 0 180px 0;
+    &__container {
+    }
+    &__header{
+        margin-bottom: 80px;
+    }
+    // .advantages__body
+
+    &__body {
+        max-width: 530px;
+        
+    }
+    &__body >*:not(:last-child) {
+        margin-bottom: 65px;
+        
+    }
+    &__column {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        
+    }
+
+    // .advantages__checkmark
+
+    &__checkmark {
+        position: absolute;
+        left: 0;
+        top:0;
+        width: 55px;
+        height: 55px;
+        
+    }
+
+    // .advantages__title
+    &__item{
+        
+        margin-left: 80px;
+    }
+    &__title {
+    font-size: 20px;
+    line-height: 1.35;
+    margin-bottom: 14px;
+    font-weight: 600;
+    }
+
+    // .advantages__text
+
+    &__text {
+    font-size: 18px;
+    line-height: 1.55;
+    font-weight: 300;
     }
 }
 
