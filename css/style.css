@@ -569,6 +569,11 @@ body {
 .advantages__header {
   margin-bottom: 80px;
 }
+@media (max-width: 660px) {
+  .advantages__header {
+    margin-bottom: 40px;
+  }
+}
 .advantages__body {
   max-width: 530px;
 }
@@ -630,6 +635,11 @@ body {
 }
 .review__header {
   margin-bottom: 90px;
+}
+@media (max-width: 660px) {
+  .review__header {
+    margin-bottom: 40px;
+  }
 }
 .review__body {
   display: flex;
@@ -868,4 +878,27 @@ body {
 .contacts__mail:hover {
   text-decoration: underline;
 }
-/*-------footer----------------------------------*//*# sourceMappingURL=style.css.map */
+/*-------footer----------------------------------*/
+.footer {
+  background-color: #000;
+  color: #fff;
+}
+.footer__body {
+  padding: 55px 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.55;
+  font-weight: 300;
+}
+.footer__body a {
+  color: aqua;
+  font-weight: 600;
+  font-size: 16px;
+}
+.footer__body > * {
+  padding-bottom: 5px;
+}/*# sourceMappingURL=style.css.map */

@@ -622,6 +622,9 @@ body{
     }
     &__header{
         margin-bottom: 80px;
+        @media (max-width:660px) {
+            margin-bottom: 40px;   
+        } 
     }
     // .advantages__body
 
@@ -699,6 +702,9 @@ body{
 
     &__header {
         margin-bottom: 90px;
+        @media (max-width:660px) {
+            margin-bottom: 40px;   
+        } 
     }
 
     // .review__body
@@ -987,6 +993,56 @@ body{
 }
 
 /*-------footer----------------------------------*/
+
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    // .footer__container
+
+    &__container {
+    }
+
+    // .footer__body
+
+    &__body {
+        padding: 55px 0 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        font-size: 14px;
+        line-height: 1.55;
+        font-weight: 300;
+    }
+
+    &__body a{
+        color: aqua;
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    &__body>*{
+        padding-bottom: 5px;
+    }
+
+    // .footer__unp
+
+    &__unp {
+    }
+
+    // .footer__copywrite
+
+    &__copywrite {
+    }
+
+    // .footer__povered
+
+    &__povered {
+    }
+}
 
 
 
