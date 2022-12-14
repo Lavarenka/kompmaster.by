@@ -35,6 +35,10 @@ body{
     object-fit: cover;
 } 
 
+.item{
+    //для js анимации
+}
+
 ._button{
     display: flex;
         justify-content: center;
@@ -48,6 +52,11 @@ body{
         border-radius: 5px;
         
         box-shadow: rgb(0 0 0 / 30%) 0px 0px 20px 0px;
+}
+
+._button:hover{
+    background-color: #fff;
+    color: rgb(245, 145, 79);
 }
 /*-----header-block--------------------*/
 .header-block {
@@ -1019,9 +1028,12 @@ body{
     }
 
     &__body a{
-        color: aqua;
+        color: rgb(245, 145, 79);;        
         font-weight: 600;
         font-size: 16px;
+    }
+    &__body a:hover{
+        text-decoration: underline;
     }
 
     &__body>*{

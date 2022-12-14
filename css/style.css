@@ -116,6 +116,11 @@ body {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 20px 0px;
 }
 
+._button:hover {
+  background-color: #fff;
+  color: rgb(245, 145, 79);
+}
+
 /*-----header-block--------------------*/
 .header-block__title {
   font-size: 42px;
@@ -895,9 +900,12 @@ body {
   font-weight: 300;
 }
 .footer__body a {
-  color: aqua;
+  color: rgb(245, 145, 79);
   font-weight: 600;
   font-size: 16px;
+}
+.footer__body a:hover {
+  text-decoration: underline;
 }
 .footer__body > * {
   padding-bottom: 5px;
