@@ -806,4 +806,66 @@ body {
   min-height: 56px;
 }
 
-/*------------contacts--------------------------*//*# sourceMappingURL=style.css.map */
+/*------------contacts--------------------------*/
+.contacts__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 155px 0;
+}
+@media (max-width: 940px) {
+  .contacts__body {
+    padding: 120px 0;
+  }
+}
+@media (max-width: 660px) {
+  .contacts__body {
+    padding: 80px 0;
+  }
+}
+.contacts__title {
+  margin-bottom: 45px;
+  line-height: 1.35;
+  font-weight: 600;
+}
+.contacts__number {
+  font-size: 36px;
+  line-height: 1.23;
+  font-weight: 600;
+  color: inherit;
+}
+@media (max-width: 660px) {
+  .contacts__number {
+    font-size: 30px;
+  }
+}
+@media (max-width: 440px) {
+  .contacts__number {
+    font-size: 26px;
+  }
+}
+.contacts__number:hover {
+  text-decoration: underline;
+}
+.contacts__mail {
+  font-size: 36px;
+  line-height: 1.23;
+  font-weight: 600;
+  color: inherit;
+  margin-bottom: 45px;
+}
+@media (max-width: 660px) {
+  .contacts__mail {
+    font-size: 30px;
+  }
+}
+@media (max-width: 440px) {
+  .contacts__mail {
+    font-size: 26px;
+  }
+}
+.contacts__mail:hover {
+  text-decoration: underline;
+}
+/*-------footer----------------------------------*//*# sourceMappingURL=style.css.map */

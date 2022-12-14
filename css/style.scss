@@ -89,6 +89,8 @@ body{
     }
     &__consultation {
     }
+    &__contacts {
+    }
 }
 /*---------Шапка---------------------------*/
 
@@ -906,6 +908,87 @@ body{
 }
 
 /*------------contacts--------------------------*/
+
+
+.contacts {
+
+    // .contacts__container
+
+    &__container {
+    }
+
+    // .contacts__body
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 155px 0;
+        @media (max-width:940px) {
+            padding: 120px 0;
+        }
+
+        @media (max-width:660px) {
+            padding: 80px 0;
+        } 
+    }
+
+    // .contacts__title
+
+    &__title {
+        margin-bottom: 45px;
+        line-height: 1.35;
+        font-weight: 600;
+        
+    }
+
+    // .contacts__number
+
+    &__number {
+        font-size: 36px;
+        line-height: 1.23;
+        font-weight: 600;
+        color: inherit;
+        @media (max-width:660px) {
+            font-size: 30px;
+        }
+        @media (max-width:440px) {
+            font-size: 26px;
+        }
+    }
+    &__number:hover{
+            text-decoration: underline;     
+    }
+
+    // .contacts__mail
+
+    &__mail {
+        font-size: 36px;
+        line-height: 1.23;
+        font-weight: 600;
+        color: inherit;
+        margin-bottom: 45px;
+        @media (max-width:660px) {
+            font-size: 30px;
+        }
+        @media (max-width:440px) {
+            font-size: 26px;
+        }
+    }
+    &__mail:hover{
+        text-decoration: underline;     
+    }
+
+    // .contacts__social
+
+    &__social {
+    }
+}
+
+/*-------footer----------------------------------*/
+
+
 
 
 
