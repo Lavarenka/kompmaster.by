@@ -470,7 +470,7 @@ body {
 
 /*-----request--------------------------*/
 .request {
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url(/img/pkfon.jpg) center center no-repeat fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url(/img/request/request.jpg) center center no-repeat fixed;
   background-size: cover;
 }
 .request__container {
@@ -556,7 +556,7 @@ body {
   font-size: 16px;
 }
 
-/*-------advantages--------------------------*/
+/*-------advantages----------------------------*/
 .advantages {
   display: flex;
   padding: 165px 0 180px 0;
@@ -726,7 +726,7 @@ body {
 
 /*----------consultation---------------------------*/
 .consultation {
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url(/img/consultation.jpg) center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url(/img/consultation/consultation.jpg) center center no-repeat;
   background-size: cover;
 }
 .consultation__body {
