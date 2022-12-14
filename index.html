@@ -1,1 +1,310 @@
-hello world
+<html>
+    <head>
+        <title>Kompmaster.by</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&display=swap" rel="stylesheet" />
+        <!-- подключение js эфектов -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link rel='stylesheet' href='https://unpkg.com/aos@2.3.0/dist/aos.css'>
+        <!-- подключение js эфектов -->
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <div class="header__container">
+                    <nav class="header__menu menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="#advantages" class="menu__link">О нас</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#services" class="menu__link">Услуги</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#contacts" class="menu__link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="#" class="header__logo">kompmaster_minsk</a>
+                    <div class="header__social social">
+                        <a href="https://www.facebook.com/artiom.griboff" class="social__item">
+                            <svg class="t-sociallinks__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve"><desc>Facebook</desc><path style="fill:#ffffff;" d="M47.761,24c0,13.121-10.638,23.76-23.758,23.76C10.877,47.76,0.239,37.121,0.239,24c0-13.124,10.638-23.76,23.764-23.76C37.123,0.24,47.761,10.876,47.761,24 M20.033,38.85H26.2V24.01h4.163l0.539-5.242H26.2v-3.083c0-1.156,0.769-1.427,1.308-1.427h3.318V9.168L26.258,9.15c-5.072,0-6.225,3.796-6.225,6.224v3.394H17.1v5.242h2.933V38.85z"></path></svg>
+                        </a>
+                        <a href="https://vk.com/mazaxaka_sf" class="social__item">
+                            <svg class="t-sociallinks__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 99 99" enable-background="new 0 0 99 99" xml:space="preserve"><desc>VK</desc><path style="fill:#ffffff;" fill-rule="evenodd" clip-rule="evenodd" d="M49 98C76.062 98 98 76.062 98 49C98 21.938 76.062 0 49 0C21.938 0 0 21.938 0 49C0 76.062 21.938 98 49 98ZM22 34C22.4442 55.3198 33.1042 68.1323 51.7933 68.1323H52.8527V55.9351C59.7202 56.6182 64.9132 61.6409 66.9973 68.1323H76.7008C74.0359 58.4292 67.0314 53.0649 62.658 51.0149C67.0314 48.4866 73.1814 42.3367 74.6505 34H65.8353C63.922 40.7649 58.251 46.915 52.8527 47.4958V34H44.0374V57.6433C38.5707 56.2766 31.6692 49.6482 31.3617 34H22Z"></path></svg> 
+                        </a>
+                        <a href="https://www.instagram.com/kompmaster_minsk/?igshid=YmMyMTA2M2Y%3D" class="social__item">
+                            <svg class="t-sociallinks__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="30px" viewBox="0 0 30 30" xml:space="preserve"><desc>Instagram</desc><path style="fill:#ffffff;" d="M15,11.014 C12.801,11.014 11.015,12.797 11.015,15 C11.015,17.202 12.802,18.987 15,18.987 C17.199,18.987 18.987,17.202 18.987,15 C18.987,12.797 17.199,11.014 15,11.014 L15,11.014 Z M15,17.606 C13.556,17.606 12.393,16.439 12.393,15 C12.393,13.561 13.556,12.394 15,12.394 C16.429,12.394 17.607,13.561 17.607,15 C17.607,16.439 16.444,17.606 15,17.606 L15,17.606 Z"></path><path style="fill:#ffffff;" d="M19.385,9.556 C18.872,9.556 18.465,9.964 18.465,10.477 C18.465,10.989 18.872,11.396 19.385,11.396 C19.898,11.396 20.306,10.989 20.306,10.477 C20.306,9.964 19.897,9.556 19.385,9.556 L19.385,9.556 Z"></path><path style="fill:#ffffff;" d="M15.002,0.15 C6.798,0.15 0.149,6.797 0.149,15 C0.149,23.201 6.798,29.85 15.002,29.85 C23.201,29.85 29.852,23.202 29.852,15 C29.852,6.797 23.201,0.15 15.002,0.15 L15.002,0.15 Z M22.666,18.265 C22.666,20.688 20.687,22.666 18.25,22.666 L11.75,22.666 C9.312,22.666 7.333,20.687 7.333,18.28 L7.333,11.734 C7.333,9.312 9.311,7.334 11.75,7.334 L18.25,7.334 C20.688,7.334 22.666,9.312 22.666,11.734 L22.666,18.265 L22.666,18.265 Z"></path></svg>         
+                        </a>
+                        <a href="https://t.me/mazaxaka_sf" class="social__item">
+                            <svg class="t-sociallinks__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="30px" viewBox="0 0 60 60" xml:space="preserve"><desc>Telegram</desc><path style="fill:#ffffff;" d="M30 0C13.4 0 0 13.4 0 30s13.4 30 30 30 30-13.4 30-30S46.6 0 30 0zm16.9 13.9l-6.7 31.5c-.1.6-.8.9-1.4.6l-10.3-6.9-5.5 5.2c-.5.4-1.2.2-1.4-.4L18 32.7l-9.5-3.9c-.7-.3-.7-1.5 0-1.8l37.1-14.1c.7-.2 1.4.3 1.3 1z"></path><path style="fill:#ffffff;" d="M22.7 40.6l.6-5.8 16.8-16.3-20.2 13.3"></path></svg>     
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <main class="page">
+                <div class="page__main-block main-block">
+                    <div class="main-block__video">
+                         <video autoplay muted loop id="myVideo">
+                        <source src="img/stok.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="main-block__container _container">
+                        <div class="main-block__body">
+                            <div class="main-block__title item" data-aos="fade-up">Компьютерный мастер в <br> Минске с выездом на дом</div>
+                            <div class="main-block__text item" data-aos="fade-up">Отправьте заявку и я перезвоню Вам в течение 10 минут</div>
+                            <a href="#consultation" class="main-block__button _button">СВЯЗАТЬСЯ</a>
+                        </div>
+                    </div>
+                </div>
+                <section id="competitor" class="page__competitor competitor">
+                    <div class="competitor__container _container">
+                        <div class="competitor__body">
+                            <div class="competitor__column item" data-aos="fade-right">
+                                <div class="competitor__title">Чем я отличаюсь от конкурентов?</div>
+                                <ul class="competitor__items">
+                                    <li class="competitor__item">никаких накруток стоимости услуг;</li>
+                                    <li class="competitor__item">низкие цены по сравнению с конкурентами;</li>
+                                    <li class="competitor__item">вы видите, за что платите. После диагностики я рассказываю о проблеме, объясняю, показываю.</li>
+                                </ul>
+                            </div>
+                            <div class="competitor__images item" data-aos="fade-left">
+                                <div class="competitor__image-block">
+                                    <div class="competitor__image _ibg">
+                                        <img src="img/competitor/01.jpg" alt="competitor">
+                                    </div>
+                                    <div class="competitor__image _ibg">
+                                        <img src="img/competitor/02.jpg" alt="competitor">
+                                    </div>
+                                </div>
+                                <div class="competitor__image-block">
+                                    <div class="competitor__image _ibg">
+                                        <img src="img/competitor/03.jpg" alt="competitor">
+                                    </div>
+                                    <div class="competitor__image _ibg">
+                                        <img src="img/competitor/04.jpg" alt="competitor">
+                                    </div>
+                                </div>   
+                            </div>
+                        </div>
+                    </div>
+                </section><!-- чем я отл от конкурентов -->
+                <section id="services"class="page__services services">
+                    <div class="services__container _container">
+                        <div class="services__header header-block">
+                            <div class="header-block__title">Услуги</div>
+                        </div>
+                        <div class="services__body">
+                            <div class="services__column item" data-aos="zoom-out">
+                                <div class="services__item item-service">
+                                     <div class="item-service__icon">
+                                        <img src="img/services/01.png" alt="services">
+                                     </div>
+                                     <div class="item-service__title">Установка операционной системы</div>
+                                     <div class="item-service__text">Windows XP/7/8.1/10/11 MAC</div>   
+                                </div>
+                            </div><!-- column1 -->
+                            <div class="services__column item" data-aos="zoom-out">
+                                <div class="services__item item-service">
+                                     <div class="item-service__icon">
+                                        <img src="img/services/02.png" alt="services">
+                                     </div>
+                                     <div class="item-service__title">Чистка ПК/ноутбука, замена термопасты</div>
+                                     <div class="item-service__text">Разборка/сборка всех комплектующих, чистка от пыли, замена термопасты</div>   
+                                </div>
+                            </div><!-- column2 -->
+                            <div class="services__column item" data-aos="zoom-out">
+                                <div class="services__item item-service">
+                                     <div class="item-service__icon">
+                                        <img src="img/services/03.png" alt="services">
+                                     </div>
+                                     <div class="item-service__title">Программный ремонт жесткого диска</div>
+                                     <div class="item-service__text">Диагностика диска, дефрагментация и ремонт с помощью программного обеспечения</div>   
+                                </div>
+                            </div><!-- column3 -->
+                            <div class="services__column item" data-aos="zoom-out">
+                                <div class="services__item item-service">
+                                     <div class="item-service__icon">
+                                        <img src="img/services/04.png" alt="services">
+                                     </div>
+                                     <div class="item-service__title">Установка ПО</div>
+                                     <div class="item-service__text">Установка различных ПО на выбор клиента</div>   
+                                </div>
+                            </div><!-- column4 -->
+                            <div class="services__column item" data-aos="zoom-out">
+                                <div class="services__item item-service">
+                                     <div class="item-service__icon">
+                                        <img src="img/services/05.png" alt="services">
+                                     </div>
+                                     <div class="item-service__title">Помощь в сборке ПК</div>
+                                     <div class="item-service__text">Подбор комплектующих, доставка на дом, сборка</div>   
+                                </div>
+                            </div><!-- column5 -->
+                            <div class="services__column item" data-aos="zoom-out">
+                                <div class="services__item item-service">
+                                     <div class="item-service__icon">
+                                        <img src="img/services/06.png" alt="services">
+                                     </div>
+                                     <div class="item-service__title">Восстановление жесткого диска</div>
+                                     <div class="item-service__text">Восстановление жесткого диска c помощью программного обеспечения</div>   
+                                </div>
+                            </div><!-- column6 -->
+                        </div>
+                    </div>
+                </section><!-- услуги -->
+                <section class="page__request request">
+                    <div class="request__container _container">
+                        <div class="request__body">
+                            <div class="request__title">Нет нерешаемых проблем</div>
+                            <div class="request__text">
+                                Если ваш компьютер сломался, вы не знаете что делать и к кому обратиться,  - позвоните, и мы вместе разберемся с проблемой
+                            </div>
+                            <div class="request__column">
+                                <svg role="presentation" class="request__arrow-icon " style="fill:#ffffff; " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 180"><path d="M54.1 108c-.5 0-.9-.2-1.2-.6-.5-.7-.3-1.6.4-2.1 1.5-1 9.5-5.5 14.6-8.3-17.4-.5-31.3-7.3-41.3-20C9.9 55.7 9.5 24.2 14.2 3.7c.2-.8 1-1.3 1.8-1.1.8.2 1.3 1 1.1 1.8-4.6 19.9-4.2 50.3 11.8 70.8 9.5 12.2 23 18.6 39.9 18.9h.3l-3.2-4c-1.4-1.7-2.7-3.3-4.1-5.1-.7-.9-1.5-1.9-2.3-2.9-.5-.6-.4-1.6.2-2.1.6-.5 1.6-.4 2.1.2 0 0 0 .1.1.1l6.4 7.9c.5.6.9 1.1 1.4 1.7 1.5 1.8 3.1 3.6 4.3 5.5 0 .1.1.1.1.2.1.2.1.3.2.5v.3c0 .2 0 .3-.1.5 0 .1-.1.1-.1.2-.1.2-.2.3-.3.4-.1.1-.2.1-.3.2 0 0-.1 0-.2.1-.9.4-16 8.6-18.2 10.1-.4 0-.7.1-1 .1z"></path></svg>
+                                <a href="#consultation" class="request__button _button">Заказать звонок</a>
+                            </div>
+                        </div>
+                    </div>
+                </section><!-- нет не решаемых проблем -->
+                <section id="advantages" class="page__advantages advantages">
+                    <div class="advantages__container _container">
+                        <div class="advantages__header header-block">
+                            <div class="header-block__title">Преимущества</div>
+                        </div>
+                        <div class="advantages__body">
+                            <div class="advantages__column item" data-aos="fade-right">
+                                <svg role="presentation" class="advantages__checkmark" fill="#f5914f" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M50.2 1.9C23.5 1.9 1.7 23.7 1.7 50.4s21.8 48.5 48.5 48.5 48.4-21.8 48.5-48.5c0-26.7-21.8-48.5-48.5-48.5zm-7.3 71.4L22.7 53.2l4.2-4.3 15.8 15.7 32.1-35.4 4.4 4-36.3 40.1z"></path><path d="M50.2 1.9C23.5 1.9 1.7 23.7 1.7 50.4s21.8 48.5 48.5 48.5 48.4-21.8 48.5-48.5c0-26.7-21.8-48.5-48.5-48.5zm-7.3 71.4L22.7 53.2l4.2-4.3 15.8 15.7 32.1-35.4 4.4 4-36.3 40.1z"></path></svg>
+                                <div class="advantages__item">
+                                    <div class="advantages__title">Практический опыт</div>
+                                    <div class="advantages__text">Более 5 лет работы компьютерным мастером.</div>
+                                </div>   
+                            </div>   <!-- column_1 --> 
+                            <div class="advantages__column item" data-aos="fade-left">
+                                <svg role="presentation" class="advantages__checkmark" fill="#f5914f" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M50.2 1.9C23.5 1.9 1.7 23.7 1.7 50.4s21.8 48.5 48.5 48.5 48.4-21.8 48.5-48.5c0-26.7-21.8-48.5-48.5-48.5zm-7.3 71.4L22.7 53.2l4.2-4.3 15.8 15.7 32.1-35.4 4.4 4-36.3 40.1z"></path><path d="M50.2 1.9C23.5 1.9 1.7 23.7 1.7 50.4s21.8 48.5 48.5 48.5 48.4-21.8 48.5-48.5c0-26.7-21.8-48.5-48.5-48.5zm-7.3 71.4L22.7 53.2l4.2-4.3 15.8 15.7 32.1-35.4 4.4 4-36.3 40.1z"></path></svg>
+                                <div class="advantages__item">
+                                    <div class="advantages__title">Выезд на дом и бесплатная диагностика</div>
+                                    <div class="advantages__text">Приступаю к работе только после проведения диагностики и предварительного согласования перечня услуг и их стоимости.  </div>
+                                </div>   
+                            </div>  <!-- column_2 -->
+                            <div class="advantages__column item" data-aos="fade-right">
+                                <svg role="presentation" class="advantages__checkmark" fill="#f5914f" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M50.2 1.9C23.5 1.9 1.7 23.7 1.7 50.4s21.8 48.5 48.5 48.5 48.4-21.8 48.5-48.5c0-26.7-21.8-48.5-48.5-48.5zm-7.3 71.4L22.7 53.2l4.2-4.3 15.8 15.7 32.1-35.4 4.4 4-36.3 40.1z"></path><path d="M50.2 1.9C23.5 1.9 1.7 23.7 1.7 50.4s21.8 48.5 48.5 48.5 48.4-21.8 48.5-48.5c0-26.7-21.8-48.5-48.5-48.5zm-7.3 71.4L22.7 53.2l4.2-4.3 15.8 15.7 32.1-35.4 4.4 4-36.3 40.1z"></path></svg>
+                                <div class="advantages__item">
+                                    <div class="advantages__title">Гарантия на все виды работ </div>
+                                    <div class="advantages__text">После проведения работ я выдаю документ c перечнем оказанных услуг и гарантией. </div>
+                                </div>   
+                            </div>  <!-- column_3 -->
+                        </div>
+                        
+                    </div>
+                </section><!-- приемущества -->
+                <section class="page__review review">
+                    <div class="review__container _container">
+                        <div class="review__header header-block">
+                            <div class="header-block__title">Отзывы клиентов из Instagram</div>
+                        </div>
+                        <div class="review__body">
+                            <div class="review__column item" data-aos="zoom-in">
+                                <div class="review__item item-review">
+                                    <div class="item-review__image">
+                                        <img src="img/review/Petrkarasik.jpg" alt="review">
+                                    </div>
+                                    <div class="item-review__content">
+                                        <div class="item-review__text">Спасибо большое мастеру, за качественное, быстрое и недорогое обслуживание.</div>
+                                        <div class="item-review__login">Petrkarasik</div>
+                                    </div>   
+                                </div>
+                            </div><!-- column_1 -->
+                            <div class="review__column item" data-aos="zoom-in">
+                                <div class="review__item item-review">
+                                    <div class="item-review__image">
+                                        <img src="img/review/Green_mojito.jpg" alt="review">
+                                    </div>
+                                    <div class="item-review__content">
+                                        <div class="item-review__text">Спасибо мастеру, все почистил заменил, очень вежливый и аккуратный мастер, все рассказал показал! Остался доволен, всем советую и цены приятные. </div>
+                                        <div class="item-review__login">Green_mojito</div>
+                                    </div>   
+                                </div>
+                            </div><!-- column_2 -->
+                            <div class="review__column item" data-aos="zoom-in">
+                                <div class="review__item item-review">
+                                    <div class="item-review__image">
+                                        <img src="img/review/Lora_loreleia.jpg" alt="review">
+                                    </div>
+                                    <div class="item-review__content">
+                                        <div class="item-review__text">Спасибо за качественную работу) Не шумит, не стучит, работает отлично! Будем обращаться) </div>
+                                        <div class="item-review__login">Lora_loreleia</div>
+                                    </div>   
+                                </div>
+                            </div><!-- column_3 -->
+                            <div class="review__column item" data-aos="zoom-in">
+                                <div class="review__item item-review">
+                                    <div class="item-review__image">
+                                        <img src="img/review/Maxi_vox.jpg" alt="review">
+                                    </div>
+                                    <div class="item-review__content">
+                                        <div class="item-review__text">Спасибо, за проделанную работу, все сделано качественно и быстро. Прямо как я и хотел! Мастер очень толковый! Буду обращаться еще! </div>
+                                        <div class="item-review__login">Maxi_vox</div>
+                                    </div>   
+                                </div>
+                            </div><!-- column_4 -->
+                            
+                        </div>
+                    </div>
+                </section> <!-- отзывы -->
+                <div id="consultation" class="page__consultation consultation">
+                    <div class="consultation__container _container">
+                        <div class="consultation__body">
+                            <div class="consultation__title">Нужна консультация?</div>
+                            <div class="consultation__subtitle">Отправьте заявку и я перезвоню Вам</div>
+                            <form action="#" class="consultation__form">
+                                <input autocomplete="off" required type="text" placeholder="Имя" name="form[]" class="consultation__input">
+                                <input autocomplete="off" required type="email" placeholder="E-mail" name="form[]" class="consultation__input">
+                                <input autocomplete="off" required type="text" placeholder="Текст" name="form[]" class="consultation__input">
+                                <button type="submit" class="consultation__button _button">Отправить</button>
+                            </form>
+                            <div class="consultation__text">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c политикой конфиденциальности.</div>
+                        </div>
+                    </div>
+                </div> <!-- консультация -->
+                <section id="contacts" class="page__contacts contacts">
+                    <div class="contacts__container _container">
+                        <div class="contacts__body">
+                            <div class="contacts__title">КОНТАКТЫ</div>  
+                            <a href="tell:+375298093214" class="contacts__number">+375 29 809-32-14</a>
+                            <a href="mailto:arty_h41@mail.ru" class="contacts__mail">arty_h41@mail.ru</a>
+                            <div class="contacts__social social">
+                            <a href="https://www.facebook.com/artiom.griboff" class="social__item">
+                                <svg class="t-sociallinks__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve"><desc>Facebook</desc><path style="fill:#f5914f;" d="M47.761,24c0,13.121-10.638,23.76-23.758,23.76C10.877,47.76,0.239,37.121,0.239,24c0-13.124,10.638-23.76,23.764-23.76C37.123,0.24,47.761,10.876,47.761,24 M20.033,38.85H26.2V24.01h4.163l0.539-5.242H26.2v-3.083c0-1.156,0.769-1.427,1.308-1.427h3.318V9.168L26.258,9.15c-5.072,0-6.225,3.796-6.225,6.224v3.394H17.1v5.242h2.933V38.85z"></path></svg>
+                            </a>
+                            <a href="https://vk.com/mazaxaka_sf" class="social__item">
+                                <svg class="t-sociallinks__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 99 99" enable-background="new 0 0 99 99" xml:space="preserve"><desc>VK</desc><path style="fill:#f5914f;" fill-rule="evenodd" clip-rule="evenodd" d="M49 98C76.062 98 98 76.062 98 49C98 21.938 76.062 0 49 0C21.938 0 0 21.938 0 49C0 76.062 21.938 98 49 98ZM22 34C22.4442 55.3198 33.1042 68.1323 51.7933 68.1323H52.8527V55.9351C59.7202 56.6182 64.9132 61.6409 66.9973 68.1323H76.7008C74.0359 58.4292 67.0314 53.0649 62.658 51.0149C67.0314 48.4866 73.1814 42.3367 74.6505 34H65.8353C63.922 40.7649 58.251 46.915 52.8527 47.4958V34H44.0374V57.6433C38.5707 56.2766 31.6692 49.6482 31.3617 34H22Z"></path></svg> 
+                            </a>
+                            <a href="https://www.instagram.com/kompmaster_minsk/?igshid=YmMyMTA2M2Y%3D" class="social__item">
+                                <svg class="t-sociallinks__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48px" height="48px" viewBox="0 0 30 30" xml:space="preserve"><desc>Instagram</desc><path style="fill:#f5914f;" d="M15,11.014 C12.801,11.014 11.015,12.797 11.015,15 C11.015,17.202 12.802,18.987 15,18.987 C17.199,18.987 18.987,17.202 18.987,15 C18.987,12.797 17.199,11.014 15,11.014 L15,11.014 Z M15,17.606 C13.556,17.606 12.393,16.439 12.393,15 C12.393,13.561 13.556,12.394 15,12.394 C16.429,12.394 17.607,13.561 17.607,15 C17.607,16.439 16.444,17.606 15,17.606 L15,17.606 Z"></path><path style="fill:#f5914f;" d="M19.385,9.556 C18.872,9.556 18.465,9.964 18.465,10.477 C18.465,10.989 18.872,11.396 19.385,11.396 C19.898,11.396 20.306,10.989 20.306,10.477 C20.306,9.964 19.897,9.556 19.385,9.556 L19.385,9.556 Z"></path><path style="fill:#f5914f;" d="M15.002,0.15 C6.798,0.15 0.149,6.797 0.149,15 C0.149,23.201 6.798,29.85 15.002,29.85 C23.201,29.85 29.852,23.202 29.852,15 C29.852,6.797 23.201,0.15 15.002,0.15 L15.002,0.15 Z M22.666,18.265 C22.666,20.688 20.687,22.666 18.25,22.666 L11.75,22.666 C9.312,22.666 7.333,20.687 7.333,18.28 L7.333,11.734 C7.333,9.312 9.311,7.334 11.75,7.334 L18.25,7.334 C20.688,7.334 22.666,9.312 22.666,11.734 L22.666,18.265 L22.666,18.265 Z"></path></svg>                            </a>
+                            <a href="https://t.me/mazaxaka_sf" class="social__item">
+                                <svg class="t-sociallinks__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48px" height="48px" viewBox="0 0 60 60" xml:space="preserve"><desc>Telegram</desc><path style="fill:#f5914f;" d="M30 0C13.4 0 0 13.4 0 30s13.4 30 30 30 30-13.4 30-30S46.6 0 30 0zm16.9 13.9l-6.7 31.5c-.1.6-.8.9-1.4.6l-10.3-6.9-5.5 5.2c-.5.4-1.2.2-1.4-.4L18 32.7l-9.5-3.9c-.7-.3-.7-1.5 0-1.8l37.1-14.1c.7-.2 1.4.3 1.3 1z"></path><path style="fill:#ffffff;" d="M22.7 40.6l.6-5.8 16.8-16.3-20.2 13.3"></path></svg>     
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                </section> <!-- контакты -->
+            </main>
+            <footer class="footer">
+                <div class="footer__container _container">
+                    <div class="footer__body">
+                        <div class="footer__unp">УНП 193449575</div>
+                        <div class="footer__copywrite">© 2022 <a href="https://vk.com/mazaxaka_sf">Lavarenka</a>. Все права защищены. Копирование материалов запрещено.</div>
+                        <div class="footer__povered">Разработка сайта: &nbsp <a href="https://vk.com/mazaxaka_sf">Lavarenka</a>.</div>
+                    </div>
+                    
+                </div>
+            </footer>
+        </div>
+        <!-- подключение js эфектов -->
+        <script src='https://unpkg.com/aos@2.3.0/dist/aos.js'></script>
+        <!-- подключение js эфектов -->
+        <script src="js/script.js"></script>
+    </body>
+</html>
