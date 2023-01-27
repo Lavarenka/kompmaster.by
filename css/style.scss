@@ -921,6 +921,29 @@ body{
         min-height: 56px;
     }
 }
+/*---------отправка---------------*/
+.consultation{
+    position: relative;
+
+}
+.consultation::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(51, 51, 51, 0.9) url("../img/loading.gif") center / 50px no-repeat;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease 0s;
+}
+
+.consultation._sending::after{
+    opacity: 1;
+    visibility: visible;
+}
+/*---------отправка---------------*/
 
 /*------------contacts--------------------------*/
 
